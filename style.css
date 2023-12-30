@@ -39,10 +39,19 @@ nav {
 .menu {
   width: 250px;
   /* flex-grow: 1; */
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
 .menu > img {
   width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
 }
